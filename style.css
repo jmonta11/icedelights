@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  --bright-pink-crayola: #ff6978ff;
+  --baby-powder: #fffcf9ff;
+  --celeste: #b1ede8ff;
+  --eggplant: #6d435aff;
+  --raisin-black: #352d39ff;
+}
+
+/* ... Other styles ... */
+
+@media (min-width: 1280px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+header {
+  background-color: var(--bright-pink-crayola);
+  color: var(--baby-powder);
+  padding: 20px;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: var(--baby-powder);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; /* Adjust color as needed */
+    transition: width 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+.slideshow-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.flavors-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-1{
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+.card-img{
+  margin-top: 5px !important;
+  width: 100px;
+  margin: 0px auto;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 2s;
+}
+.card-img img{
+  width: 100%;
+  height: 100%;
+}
+.card-1:hover .card-img {
+    transform: scale(1.1); /* Zoom in effect on hover */
+  }
+
+/* ... Other styles ... */
+
+main {
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  width: 100%;
+}
+
+.coolinput label.text {
+  font-size: 0.75rem;
+  color: #FF6978;
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #ffffff;
+  width: fit-content;
+}
+
+.coolinput input[type=text].input {
+  padding: 11px 10px;
+  font-size: 0.75rem;
+  border: 2px #818CF8 solid;
+  border-radius: 5px;
+  background: #fff;
+}
+.textarea{
+  height: 100px;
+}
+.coolinput input[type=text].input:focus {
+  outline: none;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+ --color: #560bad;
+ font-family: inherit;
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid #FF6978;
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: #FF6978;
+}
+
+.contact-form button:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: #FF6978;
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+.contact-form button:hover {
+ color: #fff;
+}
+
+.contact-form button:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+.contact-form button:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+.contact-form button:active:before {
+ background: #FF6978;
+ transition: background 0s;
+}
+
+
+.about-us {
+  background: url("https://images.unsplash.com/photo-1629385701021-fcd568a743e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") no-repeat left top, linear-gradient(#eb01a5, #d13531);
+  padding: 20px;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-us p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.flavors {
+  background-color: var(--eggplant);
+  color: var(--baby-powder);
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--raisin-black);
+  color: var(--baby-powder);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer p {
+  margin: 0;
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+footer .fa{
+  font-size: 25px;
+}
+footer a:hover {
+  transform: scale(1.2);
+  color: #FF6978;
+}
+.footer-links{
+  width: 300px;
+  margin: 0px auto;
+}
+.footer-links ul{
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li{
+  list-style: none;
+  margin-right: 7px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+

@@ -1,0 +1,128 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Iced Delights </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Iced Delights</h1>
+    <nav>
+      <ul>
+        <li><a id="home">Home</a></li>
+   <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1629385744299-74b9cf013f52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ice Cream 1">
+    </div>
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1593558159516-d0be2a960c52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Ice Cream 2">
+    </div>
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1603384358453-e337643f75fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=937&q=80" alt="Ice Cream 3">
+    </div>
+    
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+
+  <main>
+    <section data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="about" class="about-us">
+      <h2>About Us</h2>
+      <p>Welcome to Iced Delights, where you can experience the most delightful ice cream flavors you've ever tasted. We pride ourselves in creating unique and mouth-watering ice cream creations to satisfy your sweet cravings. Each scoop is carefully crafted using only the finest ingredients, ensuring the highest quality and taste in every bite.</p>
+    </section>
+
+    <section id ="menu" class="flavors">
+      <h2>Our Flavors in Scoops</h2>
+      <div class="flavors-card">
+        <div data-aos="zoom-in-up" class="card-1">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1532678465554-94846274c297?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80">
+          </div>
+          <h2>Cotton <br>Candy Scoop $5</h2>
+        </div>
+        <div data-aos="zoom-in" class="card-1">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1625234969503-49c7f28bc6ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=385&q=80">
+          </div>
+          <h2>Chocolate Fudge Scoop $5</h2>
+        </div>
+        <div data-aos="zoom-in-down" class="card-1">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1618485476424-7dc9cd512c08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80">
+          </div>
+          <h2>Strawberry Chunk Scoop $5</h2>
+        </div>
+        <div data-aos="zoom-in-left" class="card-1">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1534706936160-d5ee67737249?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80">
+          </div>
+          <h2>Mint Chocolate Chip Scoop $5</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <main>
+    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id="contact" class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="coolinput">
+          <label for="input" class="text">Name:</label>
+          <input type="text" placeholder="Name Here..." name="input" class="input">
+        </div>
+
+        <div class="coolinput">
+          <label for="input" class="text">Email:</label>
+          <input type="text" placeholder="Email Here..." name="input" class="input">
+        </div>
+
+        <div class="coolinput ">
+          <label for="input" class="text">Message:</label>
+          <input class="textarea" type="text" placeholder="Message Worlds..." name="input" class="input">
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-whatsapp"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a  href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <p>&copy; 2023 Iced Delights. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+  <script src="script.js" defer></script>
+
+</body>
+
